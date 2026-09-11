@@ -30,7 +30,7 @@
 
   <section id="home" class="hero">
     <div class="wrap">
-      <p class="eyebrow">🇰🇷 Korean Boba &amp; Snacks &middot; Noida</p>
+      <p class="eyebrow">Korean Boba &amp; Snacks &middot; Noida</p>
       <h1>Coffee, but make it <span class="accent">creative.</span></h1>
       <p class="herosub">Bubble tea named after your favourite K-dramas, Korean snacks, and a spot worth
         the trip. Come find us.</p>
@@ -44,11 +44,11 @@
   <section class="stats reveal">
     <div class="wrap statsgrid">
       <div class="statitem">
-        <span class="statnum">3.9★</span>
+        <span class="statnum">3.9</span>
         <span class="statlabel">Zomato Rating</span>
       </div>
       <div class="statitem">
-        <span class="statnum">5.0★</span>
+        <span class="statnum">5.0</span>
         <span class="statlabel">Justdial (186 reviews)</span>
       </div>
       <div class="statitem">
@@ -56,8 +56,8 @@
         <span class="statlabel">Instagram Followers</span>
       </div>
       <div class="statitem">
-        <span class="statnum">1</span>
-        <span class="statlabel">Noida Outlet</span>
+        <span class="statnum">2</span>
+        <span class="statlabel">Noida Outlets</span>
       </div>
     </div>
   </section>
@@ -86,7 +86,7 @@
       <h3 class="menucat">Creamy Milk Boba</h3>
       <div class="menugrid reveal-stagger">
         <div class="menuitem">
-          <div class="menuitemhead"><span>Classic Del Luna</span><span class="price">₹130</span></div>
+          <div class="menuitemhead"><span>Classic Del Luna</span><span class="price">₹140</span></div>
           <p class="menudesc">Best with tapioca pearls</p>
         </div>
         <div class="menuitem">
@@ -102,7 +102,7 @@
           <p class="menudesc">Best with tapioca pearls</p>
         </div>
         <div class="menuitem">
-          <div class="menuitemhead"><span>Itaewon Taro</span><span class="price">₹150</span></div>
+          <div class="menuitemhead"><span>Itaewon Taro</span><span class="price">₹160</span></div>
           <p class="menudesc">Best with tapioca pearls</p>
         </div>
         <div class="menuitem">
@@ -114,7 +114,7 @@
           <p class="menudesc">Best with tapioca pearls</p>
         </div>
         <div class="menuitem">
-          <div class="menuitemhead"><span>Strawberry Sarang</span><span class="price">₹160</span></div>
+          <div class="menuitemhead"><span>Strawberry Sarang</span><span class="price">₹170</span></div>
           <p class="menudesc">Best with tapioca pearls</p>
         </div>
       </div>
@@ -122,7 +122,7 @@
       <h3 class="menucat">Iced Popping</h3>
       <div class="menugrid reveal-stagger">
         <div class="menuitem">
-          <div class="menuitemhead"><span>Peach Popping</span><span class="price">₹170</span></div>
+          <div class="menuitemhead"><span>Peach Popping</span><span class="price">₹190</span></div>
           <p class="menudesc">Best with peach popping bubbles</p>
         </div>
         <div class="menuitem">
@@ -177,8 +177,12 @@
       <h2>Gallery</h2>
       <p class="sectionsub">A peek at the vibe. Follow <a href="https://www.instagram.com/teayoungbobacafe/" target="_blank">@teayoungbobacafe</a> for more.</p>
       <div class="gallerygrid reveal-stagger">
-        <div class="galleryitem g1" role="img" aria-label="Tea Young Cafe storefront"></div>
-        <div class="galleryitem g2" role="img" aria-label="Tea Young boba drink"></div>
+        <div class="galleryitem g1">🧋</div>
+        <div class="galleryitem g2">🍜</div>
+        <div class="galleryitem g3">☕</div>
+        <div class="galleryitem g4">🍑</div>
+        <div class="galleryitem g5">🍡</div>
+        <div class="galleryitem g6">📸</div>
       </div>
     </div>
   </section>
@@ -186,11 +190,16 @@
   <section id="locations" class="reveal">
     <div class="wrap">
       <h2>Locations</h2>
-      <div class="locgrid locgrid-single">
+      <div class="locgrid">
+        <div class="loccard">
+          <h3>Sector 37</h3>
+          <p>Shop K-4, Godavari Complex,<br>Arun Vihar, Sector 37, Noida</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Godavari+Complex+Arun+Vihar+Sector+37+Noida" target="_blank" class="loclink">Get Directions →</a>
+        </div>
         <div class="loccard">
           <h3>Sector 75</h3>
           <p>Golf Avenue 1,<br>Sector 75, Noida</p>
-          <a href="https://www.google.com/maps/search/?api=1&query=Golf+Avenue+1+Sector+75+Noida" target="_blank" class="loclink">Get Directions</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Golf+Avenue+1+Sector+75+Noida" target="_blank" class="loclink">Get Directions →</a>
         </div>
       </div>
     </div>
@@ -223,7 +232,6 @@
   </footer>
 
   <script>
-    // smooth scroll for nav
     document.querySelectorAll('a[href^="#"]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         var target = document.querySelector(this.getAttribute('href'));
@@ -234,7 +242,6 @@
       });
     });
 
-    // scroll reveal
     (function () {
       var targets = document.querySelectorAll('.reveal, .reveal-stagger');
       if (!('IntersectionObserver' in window)) {
@@ -260,7 +267,6 @@
       targets.forEach(function (t) { observer.observe(t); });
     })();
 
-    // contact form (no backend, just a friendly confirmation)
     document.querySelector('.contactform').addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = this.querySelector('input[type="submit"]');
